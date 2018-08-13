@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML/CSS SAMPLE</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <!-- <script src="script.js" type="text/javascript"></script> -->
+</head>
+<body>
+  <div>
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title">labelとinput</h2>
+      <form id="label-sample">
+        <label>
+          <input type="radio" name="label-group">
+          ラベル1
+        </label>
+        <label>
+          <input type="radio" name="label-group">
+          ラベル2
+        </label>
+        <label>
+          <input type="radio" name="label-group">
+          ラベル3
+        </label>
+      </form>
+    </section>
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title">labelとinputでタブ</h2>
+      <ul class="tab">
+        <li>
+          <label for="tab-label1">ラベル1</label>
+        </li>
+        <li>
+          <label for="tab-label2">ラベル2</label>
+        </li>
+        <li>
+          <label for="tab-label3">ラベル3</label>
+        </li>
+      </ul>
+      <div>
+        <input id="tab-label1" type="radio" name="tab-label-group" class="dn">
+        <div class="content">
+          ラベル1のコンテンツ
+        </div>
+        <input id="tab-label2" type="radio" name="tab-label-group" class="dn">
+        <div class="content">
+          ラベル2のコンテンツ
+        </div>
+        <input id="tab-label3" type="radio" name="tab-label-group" class="dn">
+        <div class="content">
+          ラベル3のコンテンツ
+        </div>
+      </div>
+    </section>  
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title">labelとinputでタブ2</h2>
+      別窓で開く
+      <div id="wrapper">
+        <input type="radio" name="switch" id="tab-1" checked>
+        <input type="radio" name="switch" id="tab-2">
+        <input type="radio" name="switch" id="tab-3">
+        <input type="radio" name="switch" id="tab-4">
+        <input type="radio" name="switch" id="tab-5">
+        <ul class="tabBtn">
+          <li><label for="tab-1">タブ1</label></li>
+          <li><label for="tab-2">タブ2</label></li>
+          <li><label for="tab-3">タブ3</label></li>
+          <li><label for="tab-4">タブ4</label></li>
+          <li><label for="tab-5">タブ5</label></li>
+        </ul>
+        <div class="tabContents">
+          <section>タブコンテンツ1</section>
+          <section>タブコンテンツ2</section>
+          <section>タブコンテンツ3</section>
+          <section>タブコンテンツ4</section>
+          <section>タブコンテンツ5</section>
+        </div>
+      </div>
+    </section>
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title">可変する入力フォーム</h2>
+      <div class="variable-area" contenteditable="true"></div>
+    </section>
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title">クレジットカード入力区切り</h2>
+      <div class="credit-card" contenteditable="true"></div>
+    </section>
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title">テキストフォームの補完</h2>
+      <input name="yourname" autocomplete="on" list="yourname">
+      <datalist id="yourname">
+        <option value="yoshikawa">
+        <option value="yoshida">
+        <option value="yoneda">
+        <option value="yokoyama">
+        <option value="yamada">
+      </datalist>
+    </section>
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title"> フォームのバリデーション</h2>
+      <form>
+          必須：<input required="required"><br />
+          数字のみ：<input pattern="^[-0-9]+$"><br />
+          メールアドレス：<input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br />
+          パスワード：<input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> ※8文字以上で1文字以上の数字、小文字アルファベット、大文字アルファベットがそれぞれ含まれていること<br />
+          <input type="submit">
+      </form>
+      search：<input type="search"><br />
+      url：<input type="url"><br />
+      email：<input type="email"><br />
+      password：<input type="password"><br />
+      date：<input type="date"><br />
+      month：<input type="month"><br />
+      week：<input type="week"><br />
+      time：<input type="time"><br />
+      datetime-local：<input type="datetime-local"><br />
+      number：<input type="number"><br />
+      range：<input type="range"><br />
+      color：<input type="color"><br />
+    </section>
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title">高さを一番高いものに合わせる</h2>
+      <div class="card-wrapper">
+        <div class="card">サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</div>
+        <div class="card">サンプル</div>
+        <div class="card">サンプル</div>
+        <div class="card">サンプルサンプル</div>
+        <div class="card">サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</div>
+        <div class="card">サンプル</div>
+        <div class="card">サンプル</div>
+        <div class="card">サンプル</div>
+        <p></p>
+      </div>
+    </section>
+    <!-- サンプル -->
+    <section class="sample-area acordion">
+      <h2 class="sample-title">アコーディオン</h2>
+      <div class="menu">
+        <label for="item1">項目１</label>
+        <input type="checkbox" id="item1" checked>
+        <ul>
+          <li>項目１－１</li>
+          <li>項目１－２</li>
+          <li>項目１－３</li>
+        </ul>
+        <label for="item2">項目２</label>
+        <input type="checkbox" id="item2">
+        <ul>
+          <li>項目２－１</li>
+          <li>項目２－２</li>
+          <li>項目２－３</li>
+        </ul>
+      </div>
+    </section>
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title">ふわっとマウスオーバーエフェクト</h2>
+      <p class="fade txt">こちらは<a href="">ふわっとリンク</a>です。</p>
+    </section>
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title">ふわっとカチッとするボタン</h2>
+      <p class="btn"><a>ボタンでございます</a></p>
+    </section>  
+    <!-- サンプル -->
+    <section class="sample-area keyframes">
+      <h2 class="sample-title">@keyframesルール</h2>
+      <ul>
+        <li><span class="ball">ろ</span></li>
+        <li><span class="ball">ぱ</span></li>
+        <li><span class="ball">ん</span></li>
+      </ul>
+    </section>  
+    <!-- サンプル -->
+    <section class="sample-area after-show-detail">
+      <h2 class="sample-title">後から詳細を表示</h2>
+      <ul class="details">
+        <li class="type1">
+          <img src="../img/image.png">
+          <dl>
+            <dt>Placehold.it</dt>
+            <dd>この画像は「Placehold.it」で生成されるダミー画像を使用していました。（URLが変わったみたいなので手作りの画像に変えました。）</dd>
+            <dd><a href="//www.placehold.it/" target="_blank">Placehold.it</a></dd>
+          </dl>
+        </li>
+        <li class="type2">
+          <img src="../img/image.png">
+          <dl>
+            <dt>Placehold.it</dt>
+            <dd>今は「https://placeholdit.imgix.net/~text」というURLの後にパラメーターを付ければ、任意のダミー画像を生成してくれるみたい。</dd>
+            <dd><a href="//www.placehold.it/" target="_blank">Placehold.it</a></dd>
+          </dl>
+        </li>
+        <li class="type3">
+          <img src="../img/image.png">
+          <dl>
+            <dt>Placehold.it</dt>
+            <dd>例えば「https://placeholdit.imgix.net/~text?bg=20b2aa&txtcolor=fff&txtsize=39&txt=image&w=200&h=180」という具合（2017.2現在）。</dd>
+            <dd><a href="//www.placehold.it/" target="_blank">Placehold.it</a></dd>
+          </dl>
+        </li>
+        </ul>
+    </section>  
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title">表示モード切り替え</h2>
+      <div id="wrapper2">
+        <input type="radio" name="switch" id="normalList" checked>
+        <input type="radio" name="switch" id="imageList">
+        <input type="radio" name="switch" id="textList">
+        <ul class="tabBtn">
+          <li><label for="normalList"></label></li>
+          <li><label for="imageList"></label></li>
+          <li><label for="textList"></label></li>
+        </ul>
+        <ul class="menu">
+          <li>
+            <a href="#">
+              <dl>
+                <dt class="date"><span class="year">2014</span><span class="day">1.30</span><span class="week">Thu</span></dt>
+                <dd class="img"><img src="//lopan.jp/wp/wp-content/uploads/2014/01/icon_lovefont-300x300.png"></dd>
+                <dd class="ttl">なつかしくってあったかい、きりぎりす。 #LOVEFONT</dd>
+                <dd class="excerpt">フォント好きな人がフォントについて熱く語る「LOVEFONT」という企画にあと乗りで、僕の好きなフォント「きりぎりす」について、語るってほどは語れませんが、記事にさせていただきます。</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <dl>
+                <dt class="date"><span class="year">2013</span><span class="day">9.15</span><span class="week">Sun</span></dt>
+                <dd class="img"><span><img src="//lopan.jp/wp/wp-content/uploads/2013/09/icon_texture.jpg"></span></dd>
+                <dd class="ttl">透明ノイズと紙テクスチャ。</dd>
+                <dd class="excerpt">ちょっとざらざらした質感とか、手触りを感じるテクスチャって、背景にさりげなく敷くだけで、ほんのり暖かみが出ていいですよね。そんなざらざらノイズ画像を半透明にした「透明ノイズ」のつくり方についてまとめてみました。</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <dl>
+                <dt class="date"><span class="year">2013</span><span class="day">6.17</span><span class="week">Mon</span></dt>
+                <dd class="img"><span><img src="//lopan.jp/wp/wp-content/uploads/2013/09/icon_webdesign4.jpg"></span></dd>
+                <dd class="ttl">Webサイトの作り方のまとめ！ブラウザチェック。</dd>
+                <dd class="excerpt">トップページのコーディングがひと通り完了したので、下層ページのコーディングに移る前に、一旦ブラウザチェックしてみようと思います:)。ブラウザチェックからIEでの表示崩れを整えるまでのまとめです。</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <dl>
+                <dt class="date"><span class="year">2013</span><span class="day">3.19</span><span class="week">Tue</span></dt>
+                <dd class="img"><span><img src="//lopan.jp/wp/wp-content/uploads/2013/03/icon_photoshop_shape.jpg"></span></dd>
+                <dd class="ttl">Photoshopのシェイプでできること。</dd>
+                <dd class="excerpt">拡大しても劣化しないし、ダブルクリックでカンタンに色を変えられるし、もちろんIllustratorでも使い回せる、そんなPhotoshopの万能シェイプの機能や特長について、個人的なまとめです。</dd>
+              </dl>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>  
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title"></h2>
+    </section>  
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title"></h2>
+    </section>  
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title"></h2>
+    </section>  
+    <!-- サンプル -->
+    <section class="sample-area">
+      <h2 class="sample-title"></h2>
+    </section>
+  </div>
+</body>
+</html>
